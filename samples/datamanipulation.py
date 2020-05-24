@@ -34,7 +34,7 @@ def create_domain ( conn, domain):
     cur.execute(sql, domain)
 
 def main():
-    database = r'../data/pcf.db'
+    database = '../data/pcf.db'
 
     # create a database connection
     conn = create_connection(database)
@@ -48,7 +48,7 @@ def main():
             print(row)
 
         # insert into domain
-        print ("2. Insert into domain ")
+        print("2. Insert into domain ")
         #
         newdomain=(len(domainrows) + 1, 'domain' + str(len(domainrows) + 1), 'daily')
         print(newdomain)
