@@ -1,0 +1,4 @@
+domainName,entityName,freq,region
+project1,entity1,"daily","Americas"
+project1,entity2,"daily","Americas"
+project1,entity3,"daily","EU"

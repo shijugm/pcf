@@ -128,6 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# pycharm editor .ideal file
+# pycharm editor .idea file
 
 .idea/

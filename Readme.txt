@@ -9,4 +9,5 @@ Database
 
 SQLLITE setup
     create new database  : sqlite3 pcf.db
+    connect to an existing sqlitedb from the terminal using - sqlite3 pcf.db
     place the db file in the data folder. Or update the database path in the connection module

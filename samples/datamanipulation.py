@@ -1,4 +1,4 @@
-import sqlite3
+from pcf.common.dbconnect import connect
 from sqlite3 import Error
 
 def create_connection(db_file):
@@ -6,7 +6,7 @@ def create_connection(db_file):
     """
     conn = None
     try:
-        conn = sqlite3.connect(db_file)
+        conn = connect(db_file)
     except Error as e:
         print(e)
 
@@ -48,16 +48,16 @@ def main():
             print(row)
 
         # insert into domain
-        print("2. Insert into domain ")
+        #print("2. Insert into domain ")
         #
-        newdomain=(len(domainrows) + 1, 'domain' + str(len(domainrows) + 1), 'daily')
-        print(newdomain)
+        #newdomain=(len(domainrows) + 1, 'domain' + str(len(domainrows) + 1), 'daily')
+        #print(newdomain)
 
-        create_domain(conn, newdomain)
+        #create_domain(conn, newdomain)
 
         # select from domain after insert
-        print("3. Select from domain after insert")
-        print(select_domain_by_id(conn, 0))
+        #print("3. Select from domain after insert")
+        #print(select_domain_by_id(conn, 0))
 
 if __name__ == '__main__':
     main()
